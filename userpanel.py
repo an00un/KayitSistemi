@@ -60,7 +60,7 @@ def usersistem(page : Page):
                     (int(password.value.strip()) == firebase.get(f'users/dogrulanmis/{username.value.strip()}','password'))):
                 dogrulama1 = 1
                 dogrulama = 1
-                col.controls = [t1,b1]
+                col.controls = [t1,b1, email, emailonayla]
 
 
             else:
